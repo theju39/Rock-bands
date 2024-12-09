@@ -1,0 +1,177 @@
+html{
+  scroll-behavior: smooth;
+  background-color: rgb(239, 235, 235);
+}
+html, body{
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+}
+.intro{
+  font-size: 30px;
+  font-weight: bold;
+  padding:  5px;
+}
+header{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.italic{
+  font-style: italic;
+}
+a:hover {
+    color: #333333;
+    background-color: transparent;
+    text-decoration: none;
+  }
+.link:active{
+  color: blue;
+}
+.link:hover{
+  color: rgb(73, 172, 73);
+}
+.link:visited{
+  color: darkblue;
+}
+.code{
+ background-color: #e3e0e0;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #2c3e50;
+  display: block;
+  white-space: pre-wra;
+  margin-bottom: 15px;
+  max-width: 900px;
+}
+.beatles{
+  height: 40px;
+} 
+.ledzep{
+  width: 90%;
+}
+.indent{
+  display: block;
+}
+fieldset{
+  display: inline-block;
+  width: 0 auto;
+  border: 2px solid grey;
+  margin-bottom: 15px;
+  
+}
+.inline{
+  display: inline;
+}
+#navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 260px;
+  height: 100vh;
+  padding: 0;
+  border-right: 2px solid grey;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.nav-link{
+  border-top: 2px solid grey;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  box-sizing: border-box;
+  
+}
+.last{
+  border-bottom: 2px solid grey;
+}
+
+#main-doc{
+  margin-left: 265px;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.bullet{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.bullet li{
+  margin: 0;
+}
+main::after{
+  content: "";
+  display: block;
+  height: 30px;
+}
+
+a:link{
+  color: #333333;
+}
+
+a:link, header:link{
+  text-decoration: none;
+}
+a:visited{
+  color: #333333;
+}
+
+
+@media (max-width: 550px){
+ #main-doc{
+   margin-left: 0;
+   padding: 387px 5px 0 5px;
+   position: relative;
+ }
+  #navbar{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    border-bottom: 2px solid black;    
+    border-right: none;
+  }
+  .nav-link{
+    padding: 10px;
+    font-size: 1em;
+    text-align: left;
+  }
+  .first{
+    border-top: 2px solid black;
+  } 
+  .intro{
+    padding: 15px;
+  }
+  main::after{
+  content: "";
+  display: block;
+  height: 50px;
+ }
+a:link{
+  color: #333333;
+}
+}
+a:link, header:link{
+  text-decoration: none;
+}
+a:visited{
+  color: #333333;
+}
+
+@media (max-width: 250px){
+ #main-doc{
+   padding: 500px 5px 0 5px;
+ }
+}
